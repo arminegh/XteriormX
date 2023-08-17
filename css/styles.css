@@ -19,12 +19,28 @@ h1{
 h2 {
     color: rgb(50, 173, 222)
 }
-
 .presentacion {
     position: relative;
     text-align: center;
  
 }
+
+.presentacion__somos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: start;
+}
+
+/* img {
+    max-width: 100%;
+}
+.imagen__somos {
+    width: 30%;
+}
+*/
+
 
 .video {
     height: 13rem;
@@ -47,9 +63,7 @@ h2 {
  
 }
 
-img {
-    max-width: 100%;
-}
+
 
 
 .iconos {
@@ -84,22 +98,6 @@ img {
 .pin {
     height: 2rem;
 }
-
-.imagenSomos {
-    width: 45%;
-}
-
-.presentacionSomos p, .presentacionSomos img {
-    display: inline-block;
-}
-
-
-
-
-
-
-
-
 
 
 
