@@ -6,7 +6,34 @@
     box-sizing: 0;   
     font-family: 'Antonio', sans-serif;
 }
+.portada {
+    height: 30rem;
+}
 
+
+h1{
+    color: #8C4117;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(50, 173, 222)
+}
+
+.presentacion {
+    position: relative;
+    text-align: center;
+ 
+}
+
+.video {
+    height: 13rem;
+    margin-top: 10px;
+}
+
+.multimedia {
+    text-align: center;
+}
 .lineaPie {
     margin-top: 10px;
     size: 50px;
@@ -56,4 +83,55 @@ img {
 
 .pin {
     height: 2rem;
+}
+
+.imagenSomos {
+    width: 45%;
+}
+
+.presentacionSomos p, .presentacionSomos img {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+.uno {
+    position: absolute;
+    top: 0;
+    right: 55%;
+}
+
+.dos{
+    position: absolute;
+    top: 10%;
+    right: 40%;
+}
+
+.tres {
+    position: absolute;
+    top: 18%;
+    right: 55%;
+}
+
+
+.galeria p {
+    color: #8C4117;
+}
+
+
+
+
+
+
+
+.formulario {
+    text-align: center;
 }
