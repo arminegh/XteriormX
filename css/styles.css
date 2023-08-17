@@ -160,3 +160,72 @@ h2 {
     text-align: center;
     flex: 1;
 }
+
+.calendario__grid {
+    min-height: 100vh;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "ultimoatleta ultimoatleta ultimoatleta chic"
+        "ultimoatleta ultimoatleta ultimoatleta malinche"
+        "caballo peguis matacanes silencio";
+}
+
+.calendario__grid > * {
+    margin: .3rem;
+    border: .3rem solid;
+    border-color: blue;
+    border-radius: 8px;
+}
+
+.principal {
+    grid-area: ultimoatleta;
+    background-image: url("../img/calendario/principal.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.enero {
+    grid-area: chic; 
+    background-image: url("../img/calendario/enero.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.febrero {
+    grid-area: malinche; 
+    background-image: url("../img/calendario/febrero.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.marzo {
+    grid-area: caballo; 
+    background-image: url("../img/calendario/marzo.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.abril {
+    grid-area: peguis; 
+    background-image: url("../img/calendario/abril.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.mayo {
+    grid-area: matacanes; 
+    background-image: url("../img/calendario/mayo.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.octubre {
+    grid-area: silencio; 
+    background-image: url("../img/calendario/octubre.jpg");
+    background-size: cover;
+    background-position: center center;
+}
