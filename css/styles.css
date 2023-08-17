@@ -199,7 +199,9 @@ h2 {
     grid-area: malinche; 
     background-image: url("../img/calendario/febrero.jpg");
     background-size: cover;
+    
     background-position: center center;
+
 }
 
 .marzo {
