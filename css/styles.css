@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;   
+    font-family: 'Antonio', sans-serif;
+}
+
+.lineaPie {
+    margin-top: 10px;
+    size: 50px;
+    border-width: 3px;
+    border-color: black;
+   
+}
+.pie {
+    text-align: center;
+    width: 100;
+ 
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.iconos {
+    height: 30px;
+}
+.logo {
+    height: 7rem;
+}
+
+.pie li{
+    display: inline-block;  
+    padding: 10px;
+
+}
