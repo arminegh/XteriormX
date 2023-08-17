@@ -6,6 +6,10 @@
     box-sizing: 0;   
     font-family: 'Antonio', sans-serif;
 }
+
+img {
+    width: 100%;
+}
 .portada {
     height: 30rem;
 }
@@ -132,4 +136,24 @@ h2 {
 
 .formulario {
     text-align: center;
+}
+
+
+
+
+.aventuras__galeria {
+    margin: 2rem;
+    border: .3rem solid;
+    border-color: blue;
+    border-radius: 30px;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.aventuras__galeria > * {
+    flex: 1;
 }
