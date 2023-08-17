@@ -37,3 +37,23 @@ img {
     padding: 10px;
 
 }
+.aventura {
+    background-color: #3da2ca;
+    padding: .5rem;
+    margin: 5px;
+    border-radius: 0.25rem;
+    border: 1px solid #3da2ca;
+}
+
+.aventura {
+   display: inline-block;
+
+}
+.imagenAventura {
+    height: 40px;
+    padding-inline: 2rem;
+}
+
+.pin {
+    height: 2rem;
+}
