@@ -139,7 +139,9 @@ h2 {
 }
 
 
-
+h2 {
+    text-align: center;
+}
 
 .aventuras__galeria {
     margin: 2rem;
@@ -155,5 +157,6 @@ h2 {
 }
 
 .aventuras__galeria > * {
+    text-align: center;
     flex: 1;
 }
