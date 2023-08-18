@@ -180,7 +180,6 @@ h2 {
     border: .3rem solid;
     border-color: blue;
     border-radius: 8px;
-    border-color: rgb(111, 255, 0);
 }
 
 .principal {
@@ -234,28 +233,33 @@ h2 {
     background-position: center center;
 }
 
-
-@media (max-width 500px) {
-
+@media (max-width:  500px) {
     .calendario__grid {
-        
-        border-color: rgb(111, 255, 0);
-    }
-
-    .calendario__grid {
-        min-height: 100vh;
-        display: grid;
-    
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
         grid-template-areas: 
             "ultimoatleta ultimoatleta "
             "ultimoatleta ultimoatleta "
-            "chic malinche"
-            "caballo peguis "
+            " chic malinche"
+            "caballo peguis"
             "matacanes silencio";
     }
-
 }
 
+@media (max-width:  250px) {
+    .calendario__grid {
+        grid-template-columns: 1fr;
+        
+
+        grid-template-areas: 
+            "ultimoatleta"
+            "ultimoatleta"
+            "chic"
+            "malinche"
+            "caballo"
+            "peguis"
+            "matacanes"
+            "silencio";
+    }
+}
