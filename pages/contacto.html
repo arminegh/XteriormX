@@ -20,14 +20,15 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav nav-fill">
                 <li class="nav-item">
+                  <a class="navbar-brand" href="../index.html"> <img class="logo" src="../img/logoSmall.png" alt="Logo XteriormX"></a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="somos.html">Sobre nosotros</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./aventuras.html">Las aventuras</a>     
                 </li>
-                <li class="nav-item">
-                  <a class="navbar-brand" href="../index.html"> <img class="logo" src="../img/logoSmall.png" alt="Logo XteriormX"></a>
-                </li>
+                
                 <li class="nav-item">
                   <a class="nav-link" href="./calendario.html">Calendario</a>
                 </li>
@@ -43,25 +44,55 @@
     <main>
             <h1>Contacto</h1>
 
-        <form class="formulario" action="">
-            <label for="nombre">Nombre:
-                <input type="text" placeholder="Nombre completo" name="nombre"><br>
-            </label>
-            
-            <label for="email">Correo electrónico:
-                <input type="email" placeholder="correo electrónico" name="email"><br>
-            </label>
+            <div class="formulario__contacto">
+              <p>Pérmitenos hacer realidad tu aventura.</p>
+              <p>¿Quieres una aventura a tu medida?</p>
+              <p>También, si tienes alguna recomendación o queja</p>
+              <p>Háznoslo saber. Tu opinión nos hará crecer. </p>
+              <p>Nos pondremos en contacato contigo a la brevedad.</p>
 
-            <label for="Comentario"> Comentarios:<br>
-                <textarea placeholder="Comentarios"></textarea>
-            </label> <br>
-            <input type="number" placeholder="Edad"><br>
-            <div>Queres recibir info sobre nosotros?
-            <input type="checkbox" name="acepta" value="1"></div>
-            <input type="submit" value="ENVIAR">
-            <input type="reset" value="BORRAR">
-        </form>
+
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre(s) Apellido(s)">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@dominio.com">
+              </div>
+              <input type="number" placeholder="Edad"><br>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Comentario o petición</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              
+                  <div>Queres recibir info sobre nosotros?
+                  <input type="checkbox" name="acepta" value="1"></div>
+                  <input type="submit" value="ENVIAR">
+                  <input type="reset" value="BORRAR">
+
+            </div>
            
+
+
+
+           
+
+        
+
+        
+
+
+
+  
+
+
+
+
+
+
+
+
 
 
     </main>
