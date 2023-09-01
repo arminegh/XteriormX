@@ -209,6 +209,14 @@ h2 {
   transform: scale(2);
 }
 
+.febrero:hover {
+  transform: scale(2);
+}
+
+.marzo:hover {
+  transform: scale(2);
+}
+
 @media (max-width: 600px) {
   .calendario__grid {
     grid-template-columns: 1fr 1fr;
