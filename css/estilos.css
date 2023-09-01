@@ -27,7 +27,8 @@ h2 {
   position: relative;
   text-align: center;
 }
-.presentacion .presentacion__somos {
+
+.presentacion__somos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -51,10 +52,11 @@ h2 {
 }
 
 .pie {
+  list-style: none;
   text-align: center;
   width: 100;
 }
-.pie .pie li {
+.pie li {
   display: inline-block;
   padding: 10px;
 }
@@ -73,8 +75,6 @@ h2 {
   margin: 5px;
   border-radius: 0.25rem;
   border: 1px solid #3da2ca;
-}
-.aventura .aventura {
   display: inline-block;
 }
 
@@ -128,7 +128,7 @@ h2 {
   align-items: center;
   overflow: hidden;
 }
-.aventuras__galeria .aventuras__galeria > * {
+.aventuras__galeria > * {
   text-align: center;
   flex: 1;
 }
@@ -140,53 +140,73 @@ h2 {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "ultimoatleta ultimoatleta ultimoatleta chic" "ultimoatleta ultimoatleta ultimoatleta malinche" "caballo peguis matacanes silencio";
 }
-.calendario__grid .calendario__grid > * {
+.calendario__grid > * {
   margin: 0.3rem;
   border: 0.3rem solid;
   border-color: blue;
   border-radius: 8px;
 }
-.calendario__grid .principal {
+
+.principal {
   grid-area: ultimoatleta;
   background-image: url("../img/calendario/principal.jpeg");
   background-size: cover;
   background-position: center center;
+  transform: translate(-15px, -10px);
 }
-.calendario__grid .enero {
+
+.enero {
   grid-area: chic;
   background-image: url("../img/calendario/enero.jpg");
   background-size: cover;
   background-position: center center;
+  transition: 1s;
 }
-.calendario__grid .febrero {
+
+.febrero {
   grid-area: malinche;
   background-image: url("../img/calendario/febrero.jpg");
   background-size: cover;
   background-position: center center;
 }
-.calendario__grid .marzo {
+
+.marzo {
   grid-area: caballo;
   background-image: url("../img/calendario/marzo.jpg");
   background-size: cover;
   background-position: center center;
 }
-.calendario__grid .abril {
+
+.abril {
   grid-area: peguis;
   background-image: url("../img/calendario/abril.jpg");
   background-size: cover;
   background-position: center center;
 }
-.calendario__grid .mayo {
+
+.mayo {
   grid-area: matacanes;
   background-image: url("../img/calendario/mayo.jpg");
   background-size: cover;
   background-position: center center;
 }
-.calendario__grid .octubre {
+
+.octubre {
   grid-area: silencio;
   background-image: url("../img/calendario/octubre.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+.principal {
+  transition: 2s;
+}
+.principal :hover {
+  transform: rotateZ(45deg);
+}
+
+.enero:hover {
+  transform: scale(2);
 }
 
 @media (max-width: 600px) {
