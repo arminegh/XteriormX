@@ -1,0 +1,18 @@
+.lineaPie {
+    margin-top: 10px;
+    size: 50px;
+    border-width: 3px;
+    border-color: black;
+   
+}
+.pie {
+    list-style: none;
+    text-align: center;
+    width: 100;
+ 
+    li{
+        display: inline-block;  
+        padding: 10px;
+    
+    }
+}

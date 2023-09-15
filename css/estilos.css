@@ -5,9 +5,25 @@
   box-sizing: 0;
   font-family: "Antonio", sans-serif;
 }
+*::-moz-selection {
+  background-color: rgb(47, 65, 145);
+  color: coral;
+}
+*::selection {
+  background-color: rgb(47, 65, 145);
+  color: coral;
+}
 
 img {
   width: 100%;
+}
+
+.iconos {
+  height: 30px;
+}
+
+.logo {
+  height: 7rem;
 }
 
 .portada {
@@ -29,10 +45,14 @@ h2 {
 }
 
 .presentacion__somos {
+  margin: 6rem;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  border: 1px solid #3da2ca;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: start;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .video {
@@ -42,31 +62,6 @@ h2 {
 
 .multimedia {
   text-align: center;
-}
-
-.lineaPie {
-  margin-top: 10px;
-  size: 50px;
-  border-width: 3px;
-  border-color: black;
-}
-
-.pie {
-  list-style: none;
-  text-align: center;
-  width: 100;
-}
-.pie li {
-  display: inline-block;
-  padding: 10px;
-}
-
-.iconos {
-  height: 30px;
-}
-
-.logo {
-  height: 7rem;
 }
 
 .aventura {
@@ -141,8 +136,9 @@ h2 {
   grid-template-areas: "ultimoatleta ultimoatleta ultimoatleta chic" "ultimoatleta ultimoatleta ultimoatleta malinche" "caballo peguis matacanes silencio";
 }
 .calendario__grid > * {
-  margin: 0.3rem;
-  border: 0.3rem solid;
+  margin: 0.8rem;
+  border: 0.1rem solid;
+  padding: 2rem;
   border-color: blue;
   border-radius: 8px;
 }
@@ -152,7 +148,7 @@ h2 {
   background-image: url("../img/calendario/principal.jpeg");
   background-size: cover;
   background-position: center center;
-  transform: translate(-15px, -10px);
+  transition: 0.5s;
 }
 
 .enero {
@@ -198,11 +194,9 @@ h2 {
   background-position: center center;
 }
 
-.principal {
-  transition: 2s;
-}
-.principal :hover {
+.principal:hover {
   transform: rotateZ(45deg);
+  transform: rotateZ(-5deg);
 }
 
 .enero:hover {
@@ -217,6 +211,18 @@ h2 {
   transform: scale(2);
 }
 
+.abril:hover {
+  transform: scale(2);
+}
+
+.mayo:hover {
+  transform: scale(2);
+}
+
+.octubre:hover {
+  transform: scale(2);
+}
+
 @media (max-width: 600px) {
   .calendario__grid {
     grid-template-columns: 1fr 1fr;
@@ -224,12 +230,37 @@ h2 {
     grid-template-areas: "ultimoatleta ultimoatleta " "ultimoatleta ultimoatleta " " chic malinche" "caballo peguis" "matacanes silencio";
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .calendario__grid {
     grid-template-columns: 1fr;
     grid-template-areas: "ultimoatleta" "ultimoatleta" "chic" "malinche" "caballo" "peguis" "matacanes" "silencio";
   }
 }
+.presentacion__formulario {
+  margin: 6rem;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  border: 1px solid #3da2ca;
+  justify-content: center;
+}
+
 .formulario__contacto {
   text-align: center;
+}
+
+.lineaPie {
+  margin-top: 10px;
+  size: 50px;
+  border-width: 3px;
+  border-color: black;
+}
+
+.pie {
+  list-style: none;
+  text-align: center;
+  width: 100;
+}
+.pie li {
+  display: inline-block;
+  padding: 10px;
 }/*# sourceMappingURL=estilos.css.map */

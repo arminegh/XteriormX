@@ -1,0 +1,25 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;   
+    font-family: "Antonio", sans-serif;
+
+    &::selection{
+        background-color: rgb(47, 65, 145);
+        color: coral;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.iconos {
+    height: 30px;
+}
+.logo {
+    height: 7rem;
+}
+

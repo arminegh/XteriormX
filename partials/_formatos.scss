@@ -1,0 +1,292 @@
+
+
+
+.portada {
+    height: 30rem;
+}
+
+
+h1{
+    color: #8C4117;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(50, 173, 222)
+}
+.presentacion {
+    position: relative;
+    text-align: center;
+ 
+}
+
+.presentacion__somos {
+
+    margin: 6rem;
+    padding: 2rem;
+
+
+    border-radius: 0.25rem;
+    border: 1px solid #3da2ca;
+
+
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    align-items: stretch;
+ 
+}
+
+.video {
+    height: 13rem;
+    margin-top: 10px;
+}
+
+.multimedia {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.aventura {
+    background-color: #3da2ca;
+    padding: .5rem;
+    margin: 5px;
+    border-radius: 0.25rem;
+    border: 1px solid #3da2ca;
+
+    
+    display: inline-block;
+     
+     
+}
+
+
+.imagenAventura {
+    height: 40px;
+    padding-inline: 2rem;
+}
+
+.pin {
+    height: 6.5rem;
+    width: 6.5rem;
+}
+
+
+
+.uno {
+    position: absolute;
+    top: 0;
+    right: 55%;
+}
+
+.dos{
+    position: absolute;
+    top: 10%;
+    right: 40%;
+}
+
+.tres {
+    position: absolute;
+    top: 18%;
+    right: 55%;
+}
+
+
+.galeria p {
+    color: #8C4117;
+}
+
+
+.formulario {
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.aventuras__galeria {
+    margin: 2rem;
+    border: .3rem solid;
+    border-color: blue;
+    border-radius: 30px;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    overflow: hidden;
+
+    > * {
+        text-align: center;
+        flex: 1;
+    }
+}
+
+
+
+.calendario__grid {
+    min-height: 100vh;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "ultimoatleta ultimoatleta ultimoatleta chic"
+        "ultimoatleta ultimoatleta ultimoatleta malinche"
+        "caballo peguis matacanes silencio";
+
+
+        > * {
+            margin: .8rem;
+            border: .1rem solid;
+            padding: 2rem;
+            border-color: blue;
+            border-radius: 8px;
+        }   
+
+        
+}
+
+.principal {
+    grid-area: ultimoatleta;
+    background-image: url("../img/calendario/principal.jpeg");
+    background-size: cover;
+    background-position: center center;
+
+    
+    transition: .5s;
+}
+
+.enero {
+    grid-area: chic; 
+    background-image: url("../img/calendario/enero.jpg");
+    background-size: cover;
+    background-position: center center;
+    transition: 1s;
+}
+
+.febrero {
+    grid-area: malinche; 
+    background-image: url("../img/calendario/febrero.jpg");
+    background-size: cover;
+    
+    background-position: center center;
+
+}
+
+.marzo {
+    grid-area: caballo; 
+    background-image: url("../img/calendario/marzo.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.abril {
+    grid-area: peguis; 
+    background-image: url("../img/calendario/abril.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.mayo {
+    grid-area: matacanes; 
+    background-image: url("../img/calendario/mayo.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.octubre {
+    grid-area: silencio; 
+    background-image: url("../img/calendario/octubre.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.principal {
+
+
+    &:hover {
+        transform: rotateZ(45deg);
+        transform: rotateZ(-5deg);
+    }
+}
+
+
+.enero:hover {
+    transform: scale(2);
+}
+.febrero:hover {
+    transform: scale(2);
+}
+.marzo:hover {
+    transform: scale(2);
+}
+.abril:hover {
+    transform: scale(2);
+}
+.mayo:hover {
+    transform: scale(2);
+}
+.octubre:hover {
+    transform: scale(2);
+}
+
+
+@media (max-width:  600px) {
+    .calendario__grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        grid-template-areas: 
+            "ultimoatleta ultimoatleta "
+            "ultimoatleta ultimoatleta "
+            " chic malinche"
+            "caballo peguis"
+            "matacanes silencio";
+    }
+}
+
+@media (max-width:  450px) {
+    .calendario__grid {
+        grid-template-columns: 1fr;
+        
+
+        grid-template-areas: 
+            "ultimoatleta"
+            "ultimoatleta"
+            "chic"
+            "malinche"
+            "caballo"
+            "peguis"
+            "matacanes"
+            "silencio";
+    }
+}
+
+.presentacion__formulario {
+
+    margin: 6rem;
+    padding: 2rem;
+
+
+    border-radius: 0.25rem;
+    border: 1px solid #3da2ca;
+
+
+    justify-content: center;
+   
+ 
+}
+.formulario__contacto {
+    text-align: center;
+}   
