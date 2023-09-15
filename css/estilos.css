@@ -223,22 +223,6 @@ h2 {
   transform: scale(2);
 }
 
-@media (max-width: 600px) {
-  .calendario__grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "ultimoatleta ultimoatleta " "ultimoatleta ultimoatleta " " chic malinche" "caballo peguis" "matacanes silencio";
-  }
-  .presentacion__somos {
-    border: none;
-  }
-}
-@media (max-width: 450px) {
-  .calendario__grid {
-    grid-template-columns: 1fr;
-    grid-template-areas: "ultimoatleta" "ultimoatleta" "chic" "malinche" "caballo" "peguis" "matacanes" "silencio";
-  }
-}
 .presentacion__formulario {
   margin: 6rem;
   padding: 2rem;
@@ -251,6 +235,29 @@ h2 {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .calendario__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "ultimoatleta ultimoatleta " "ultimoatleta ultimoatleta " " chic malinche" "caballo peguis" "matacanes silencio";
+  }
+  .presentacion__somos {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  .presentacion__formulario {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+@media (max-width: 450px) {
+  .calendario__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "ultimoatleta" "ultimoatleta" "chic" "malinche" "caballo" "peguis" "matacanes" "silencio";
+  }
+}
 .lineaPie {
   margin-top: 10px;
   size: 50px;

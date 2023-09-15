@@ -242,6 +242,26 @@ h2 {
 }
 
 
+.presentacion__formulario {
+
+    margin: 6rem;
+    padding: 2rem;
+
+
+    border-radius: 0.25rem;
+    border: 1px solid #3da2ca;
+
+
+    justify-content: center;
+   
+ 
+}
+
+.formulario__contacto {
+    text-align: center;
+}   
+
+
 @media (max-width:  600px) {
     .calendario__grid {
         grid-template-columns: 1fr 1fr;
@@ -256,8 +276,20 @@ h2 {
     }
 
     .presentacion__somos{
-        
+        padding: 0;
+        margin: 0;
         border: none;
+    }
+
+    .presentacion__formulario {
+
+        margin: 0;
+        padding: 0;
+    
+    
+        border: none;
+    
+     
     }
 }
 
@@ -282,20 +314,3 @@ h2 {
 
 }
 
-.presentacion__formulario {
-
-    margin: 6rem;
-    padding: 2rem;
-
-
-    border-radius: 0.25rem;
-    border: 1px solid #3da2ca;
-
-
-    justify-content: center;
-   
- 
-}
-.formulario__contacto {
-    text-align: center;
-}   
